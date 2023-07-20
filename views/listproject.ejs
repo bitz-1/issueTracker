@@ -1,0 +1,25 @@
+<!-- createproject.ejs -->
+
+<!-- Include the layout file -->
+
+<!-- Define the body content for the createproject page -->
+
+
+
+<section>
+    <h2>Create a New Project</h2>
+
+    <!-- Form for creating a new project -->
+    <form action="/process-project" method="POST">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" name="projectName" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="developerName">Developer Name:</label>
+        <input type="text" id="developerName" name="developerName" required>
+
+        <button type="submit">Create Project</button>
+    </form>
+</section>
