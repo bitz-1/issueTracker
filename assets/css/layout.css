@@ -1,0 +1,90 @@
+/* layout.css */
+
+/* Apply a basic reset to some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Set a max width for the content and center it */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Apply styles to the header section */
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Styling for the navigation menu */
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  /* Apply styles to the footer section */
+  footer {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Styling for main section content */
+  main {
+    padding: 20px 0;
+  }
+  
+  /* Apply styles to headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive layout adjustments for small screens */
+  @media (max-width: 768px) {
+    /* Adjust the navigation menu for smaller screens */
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 5px 0;
+    }
+  
+    /* Reduce the header padding for small screens */
+    header {
+      padding: 5px 0;
+    }
+  
+    /* Reduce the container padding for small screens */
+    .container {
+      padding: 10px;
+    }
+  }
+  

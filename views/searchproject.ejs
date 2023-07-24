@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/searchproject.css">
+<div>
+  <h2>All Projects</h2>
+  <% if (typeof projects !== 'undefined' && projects.length > 0) { %>
+    <div class="project">
+      <% projects.forEach(project => { %>
+        <div class="project-card">
+          <i class="fa fa-folder-open-o"></i>
+          <h2><%= project.projectName %></h2>
+          <p><%= project.description %></p>
+          <p><%= project.developerName %></p>
+          <% if (project.fault && project.fault.length > 0) { %>
+            <div class="faults">
+              <% project.fault.forEach(fault => { %>
+                <p><strong>Issue Title:</strong> <%= fault.issue_title %></p>
+                <p><strong>Issuer Name:</strong> <%= fault.issuer_name %></p>
+                <p><strong>Issue Description:</strong> <%= fault.issue_description %></p>
+                <p class="bug"><strong >Issue Type:</strong>  <span> <i class="fa fa-bug"></i></span> <%= fault.issue_type %></p>
+              <% }); %>
+            </div>
+          <% } else { %>
+            <p>No Issues Faced</p>
+          <% } %>
+        </div>
+      <% }); %>
+    </div>
+  <% } else { %>
+    <div>
+      <h1 class="no-projects">No Projects Found</h1>
+    </div>
+  <% } %>
+</div>
+

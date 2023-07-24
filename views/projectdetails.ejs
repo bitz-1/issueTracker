@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/css/projectdetails.css">
+<!-- Filter bar -->
+
+<form action="/projectdetails/search" method="POST">
+  <input class ="searchbar"  type="text" name="projectName" placeholder="Search by Project Name,Description,Developername">
+  
+
+  <select class="selector" name="issueType">
+    <option value="">All Issue Types</option>
+    <option value="Functional Bugs">Functional Bugs</option>
+    <option value="Logical Bugs">Logical Bugs</option>
+    <option value="Workflow Bugs">Workflow Bugs</option>
+    <option value="Unit Level Bugs">Unit Level Bugs</option>
+    <option value="System-Level Integration Bugs">System-Level Integration Bugs</option>
+    <option value="Out of Bound Bugs">Out of Bound Bugs</option>
+    <option value="Security Bugs">Security Bugs</option>
+  </select>
+
+  <button type="submit">Search</button>
+</form>
+
+
+
+
+
+
+
+<main class="projectdetails">
+    
+    
+    <h2 class="Project Details"> Project Details</h2>
+     <% for(let project of projectDetails) { %>
+        <div href="#" class="project">
+            <h3 class="projectName">
+                Project Name : 
+                <%= project.projectName%>
+            </h3>
+            <p id="dev">Developer Name - <%= project.developerName %>
+            </p>
+            <p id="desc">Project Description - <%= project.description %>
+            </p>
+            <% if (project.fault){%>
+                <div class="issue" >
+                    <h3 class="ifaced"></i> Issue Faced</h3>
+
+                    <% for(let i of project.fault) { %>
+                        <div id="ititle">
+                            <p id="ititle-2">
+                               Issue Title - <%= i.issue_title %>
+                            </p>
+                            <small id="issuename" >
+                              Issuer Name - <%= i.issuer_name %>
+                            </small>
+                            <i id="issuedesc" >
+                              Issue Description - <%= i.issue_description %>
+                            </i>
+                            <i class="issue_type">
+                               Issue Type - <%= i.issue_type %>
+
+                            </i>
+                        </div>
+                        <% } %>
+                </div>
+                <% }else{ %>
+                    <div class="nofaced" >
+                        <h1 >No Issue Faced</h1>
+                    </div>
+                    <% } %>
+
+            
+
+        </div>
+        <div>
+            <a href="/projectdetails/riseissue/<%=project._id%>" type="buttton" class="risebtn">+Rise an Issue</a>
+        </div>
+        <% } %>
+</main>
+

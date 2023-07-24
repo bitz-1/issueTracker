@@ -1,0 +1,68 @@
+/* Assuming you have a container element for the buttons with class "button-container" */
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.projectdetailsheader,
+#listProjectBtn {
+  margin-right: 10px; /* Add some margin between the buttons */
+}
+
+.projectdetailsheader button,
+#listProject {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.projectdetailsheader button:hover,
+#listProject:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add animation on click */
+.projectdetailsheader button:active,
+#listProject:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: left;
+}
+
+.logo img {
+  width: 50px; /* Adjust the width and height according to your logo's size */
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.logo a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}

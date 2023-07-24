@@ -1,0 +1,277 @@
+/* projectdetails.css */
+
+/* Global styles */
+/* Style for the form container */
+form {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Style for the search bar input */
+.searchbar {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the issue type selector */
+.selector {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the search button */
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the search button on hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Style for the search button when disabled */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+/* Styles for the project details section */
+main.projectdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2.Project {
+  /* Assuming this is a typo and you meant "Project" */
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.projectName {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#dev {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#desc {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Styles for "Issue Faced" section */
+.project .issue {
+  margin-top: 20px;
+}
+
+.project .issue h3.ifaced {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Add the bug icon */
+.project .issue h3.ifaced::before {
+  content: "\f188"; /* Unicode character for the bug icon (Font Awesome) */
+  font-family: "Font Awesome\ 5 Free"; /* Replace with your Font Awesome font family */
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff0000; /* Change the color to your desired value */
+}
+
+.project #ititle-2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.project small#issuename {
+  font-size: 14px;
+  color: #777;
+}
+
+.project i#issuedesc,
+.project i.issue_type {
+  font-size: 16px;
+  color: #444;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styles for "No Issue Faced" section */
+.project .nofaced h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Styling for the filter bar */
+  .filter-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .filter-bar form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-bar input[type="text"],
+  .filter-bar select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter-bar button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the project list container */
+  #projectList {
+    margin-top: 20px;
+  }
+  
+  /* Styling for each project card */
+  .project {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .project h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .project i {
+    font-style: italic;
+    font-size: 14px;
+    color: #777;
+    display: block;
+  }
+  
+  /* Styling for the "No Issue Faced" message */
+  .project h1 {
+    font-size: 24px;
+    color: #777;
+  }
+  
+  /* Styling for the "Rise an Issue" button */
+  .risebtn {
+    display: block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .risebtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Adjust the layout for small screens */
+  @media (max-width: 576px) {
+    .filter-bar {
+      flex-direction: column;
+    }
+  
+    .filter-bar input[type="text"],
+    .filter-bar select,
+    .filter-bar button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .project {
+      padding: 10px;
+    }
+  }
+  
+  h2.Project.Details {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Change the color to your desired value */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h2.Project.Details::before {
+    content: "\f05a"; /* Unicode character for the project icon (Font Awesome) */
+    font-family: "Font Awesome\ 5 Free"; /* Replace with your Font Awesome font family */
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  

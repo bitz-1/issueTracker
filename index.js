@@ -3,10 +3,12 @@ const db = require('mongoose');
 const app = express();
 const port = 3000 || process.env.PORT; 
 const expressLayouts = require('express-ejs-layouts');
+
+
 //const path = require('path');
 
 app.use(express.urlencoded());
-app.use(express.static('/assets'));
+app.use(express.static('./assets'));
 app.use(expressLayouts);
 
 // styles and scripts extract from sub pages into layouts
@@ -17,6 +19,9 @@ app.set('layout extractScripts',true);
 
 app.set('view engine','ejs');
 app.set('views','./views');
+
+//middlewareAPI
+
 
 
 

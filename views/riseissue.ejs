@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/riseissue.css">
+<main>
+
+    <h4> <span class="icon">&#128679;</span> Create Issue </h4>
+    <form action="/projectdetails/riseissue/<%=issueID.id%>/submit_issue" method="post">
+        <label for="issue_title">Issue Title:</label>
+        <input type="text" id="issue_title" name="issue_title" required>
+      
+        <label for="issuer_name">Issuer Name:</label>
+        <input type="text" id="issuer_name" name="issuer_name" required>
+      
+        <label for="issue_description">Issue Description:</label>
+        <textarea id="issue_description" name="issue_description" required></textarea>
+      
+        <fieldset>
+          <legend>Type of Issue:</legend>
+          <label>
+            <input type="checkbox" name="issue_type" value="Functional Bugs">Functional Bugs
+          </label>
+          <label>
+            <input type="checkbox" name="issue_type" value="Logical Bugs">Logical Bugs
+          </label>
+          <label>
+            <input type="checkbox" name="issue_type" value="Workflow Bugs">Workflow Bugs
+          </label>
+          <label>
+            <input type="checkbox" name="issue_type" value="Unit Level Bugs">Unit Level Bugs
+          </label>
+          <label>
+            <input type="checkbox" name="issue_type" value="System-Level Integration Bugs">System-Level Integration Bugs
+          </label>
+          <label>
+            <input type="checkbox" name="issue_type" value="Out of Bound Bugs">Out of Bound Bugs
+          </label>
+          <label>
+            <input type="checkbox" name="issue_type" value="Security Bugs">Security Bugs
+          </label>
+        </fieldset>
+      
+        <button type="submit">Create Issue</button>
+      </form>
+      
+</main>

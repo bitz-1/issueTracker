@@ -1,0 +1,28 @@
+/* Style for the footer container */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the copyright text */
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Style for the current time section */
+#current-time {
+  margin-top: 10px;
+}
+
+/* Style for the time display */
+#time {
+  font-weight: bold;
+}
+
+/* Style for the contact form (if you have one) */
+/* Replace the #contact-form with the actual ID of your contact form */
+#contact-form {
+  /* Add your custom styles for the contact form here */
+}
