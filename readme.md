@@ -1,6 +1,6 @@
 #ISSUETRACKER
 
-Sure, here's the updated README.md with the developer name:
+
 
 # Issue Tracker Node.js Application
 
