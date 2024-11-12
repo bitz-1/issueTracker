@@ -1,6 +1,6 @@
 #ISSUETRACKER
 
-#hoisted link - https://github-bitz-issuetracker.onrender.com
+#hosted link - https://github-bitz-issuetracker.onrender.com
 
 # Issue Tracker Node.js Application
 
